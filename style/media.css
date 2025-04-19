@@ -1,0 +1,246 @@
+@media (max-width: 768px) {
+    .meal-deal-section {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 300px; /* Space for the image at the top */
+    }
+    
+    .meal-content {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .price-number {
+        font-size: 8rem;
+    }
+    
+    .price-symbol {
+        font-size: 4rem;
+    }
+    
+    .deal-text {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    /* Navigation Adjustments */
+    .nav-container {
+        flex-direction: column;
+        padding: 10px 15px;
+        border-bottom: 30px solid var(--primary-pink);
+    }
+
+    .nav-left, .nav-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-item {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .logo {
+        margin: 15px 0;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .dunkin-section {
+        font-size: 14px;
+        line-height: 1.1;
+    }
+
+    .dunkin-section::after {
+        bottom: -3px;
+    }
+
+    .app-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    
+    .app-content {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .app-image {
+        width: 100%;
+    }
+    
+    .feature-list {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    .app-store-buttons {
+        justify-content: center;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu-item {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .menu-title {
+        font-size: 1.4rem;
+    }
+    
+    .gift-card-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .gift-card-content {
+        padding-right: 0;
+    }
+    
+    .gift-heading {
+        font-size: 2.5rem;
+    }
+    
+    .gift-description {
+        font-size: 1.2rem;
+    }
+    
+    .gift-card-images {
+        justify-content: center;
+    }
+    
+    .store-locator-container {
+        flex-direction: column;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+    
+    .locator-content {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    
+    .locator-heading {
+        font-size: 3rem;
+    }
+    
+    .locator-subheading {
+        font-size: 1.5rem;
+    }
+    
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .social-media {
+        text-align: left;
+        max-width: 100%;
+    }
+    
+    .social-icons {
+        justify-content: flex-start;
+    }
+    
+    .links-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .partners-logos {
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .partner-logo img {
+        height: 30px;
+    }
+    
+    .legal-links {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Navigation Adjustments */
+    .nav-container {
+        padding: 10px 15px;
+        position: relative;
+        border-bottom: 20px solid var(--primary-pink);
+    }
+
+    .nav-left, .nav-right {
+        display: none; /* Hidden by default, shown via hamburger menu */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        padding: 15px;
+        border-bottom: 1px solid #e0e0e0;
+        z-index: 1000;
+    }
+
+    .nav-left.active, .nav-right.active {
+        display: flex; /* Shown when hamburger menu is clicked */
+    }
+
+    .nav-item {
+        font-size: 13px;
+        padding: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dunkin-section {
+        font-size: 13px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        color: var(--primary-brown);
+    }
+
+    .footer-section {
+        padding: 40px 20px 20px;
+    }
+    
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -173,6 +173,27 @@
         justify-content: center;
         text-align: center;
     }
+
+    /* Sign-Up and Sign-In Adjustments */
+    .signup-section, .signin-section {
+        padding: 30px 15px;
+    }
+
+    .signup-header .dunkin, .signin-header .dunkin {
+        font-size: 2rem;
+    }
+
+    .signup-header .rewards, .signin-header .rewards {
+        font-size: 1.5rem;
+    }
+
+    .signup-tagline, .signin-tagline {
+        font-size: 1.2rem;
+    }
+
+    .signup-container, .signin-container {
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -242,5 +263,46 @@
     
     .links-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Sign-Up and Sign-In Adjustments */
+    .birthday-selects {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .birthday-selects select {
+        width: 100%;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .form-helper-text {
+        font-size: 0.75rem;
+    }
+
+    .password-requirements {
+        font-size: 0.8rem;
+    }
+
+    .terms p {
+        font-size: 0.75rem;
+    }
+
+    .join-btn, .signin-btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .signin-link, .signup-link {
+        font-size: 0.9rem;
     }
 }

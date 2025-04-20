@@ -9,7 +9,6 @@
     --gray-800: #222222;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +18,7 @@
 body {
     max-width: 1280px;
     margin: 0 auto;
-    font: optional;
+    font-family: Arial, sans-serif;
 }
 
 /* Top Bar */
@@ -41,7 +40,7 @@ body {
     background: none;
     color: var(--gray-700);
     cursor: pointer;
-    font-size: 18px;
+    font-size: 14px;
     transition: background-color 0.2s;
 }
 
@@ -74,6 +73,7 @@ body {
     cursor: pointer;
     font-size: 14px;
     transition: opacity 0.2s;
+    text-decoration: none;
 }
 
 .sign-in-btn:hover {
@@ -163,6 +163,327 @@ body {
 /* Hamburger Menu (Hidden by default, shown on mobile) */
 .hamburger {
     display: none;
+}
+
+/* Sign-Up Section */
+.signup-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.signup-header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.signup-header .dunkin {
+    color: var(--primary-orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.signup-header h2 .rewards {
+    color: var(--primary-pink);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.signup-tagline {
+    font-size: 1.5rem;
+    color: var(--gray-800);
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.signup-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.apple-signup-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray-300);
+    border-radius: 9999px;
+    background: none;
+    color: var(--gray-800);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+}
+
+.apple-signup-btn:hover {
+    background-color: var(--gray-200);
+}
+
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider span {
+    background-color: var(--white);
+    padding: 0 10px;
+    color: var(--gray-700);
+    font-size: 0.9rem;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--gray-300);
+    z-index: -1;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: var(--gray-800);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid var(--gray-300);
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--gray-700);
+}
+
+.password-requirements {
+    list-style: none;
+    padding: 10px 0 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--gray-700);
+}
+
+.password-requirements li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.password-requirements li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-pink);
+}
+
+.password-requirements li.valid::before {
+    content: '✓';
+    color: #28a745;
+}
+
+.form-helper-text {
+    font-size: 0.85rem;
+    color: var(--gray-700);
+    margin-top: 5px;
+}
+
+.birthday-group {
+    align-items: flex-start;
+}
+
+.birthday-selects {
+    display: flex;
+    gap: 10px;
+}
+
+.birthday-selects select {
+    flex: 1;
+}
+
+.terms {
+    text-align: center;
+}
+
+.terms p {
+    font-size: 0.85rem;
+    color: var(--gray-700);
+    margin: 0;
+}
+
+.terms a {
+    color: var(--primary-pink);
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.join-btn {
+    background-color: var(--primary-pink);
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.join-btn:hover {
+    opacity: 0.9;
+}
+
+.signin-link {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: var(--gray-800);
+}
+
+.signin-link a {
+    color: var(--primary-pink);
+    text-decoration: none;
+}
+
+.signin-link a:hover {
+    text-decoration: underline;
+}
+
+/* Sign-In Section */
+.signin-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.signin-header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.signin-header .dunkin {
+    color: var(--primary-orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.signin-header h2 .rewards {
+    color: var(--primary-pink);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.signin-tagline {
+    font-size: 1.5rem;
+    color: var(--gray-800);
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.signin-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.apple-signin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray-300);
+    border-radius: 9999px;
+    background: none;
+    color: var(--gray-800);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+}
+
+.apple-signin-btn:hover {
+    background-color: var(--gray-200);
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.signin-btn {
+    background-color: var(--primary-pink);
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.signin-btn:hover {
+    opacity: 0.9;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: var(--gray-800);
+}
+
+.signup-link a {
+    color: var(--primary-pink);
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
 }
 
 .hero-section {

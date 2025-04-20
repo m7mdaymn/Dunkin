@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunkin' - Sign In</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Media Queries CSS -->
+    <link rel="stylesheet" href="style/media.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <button class="careers-btn">
+            Careers <i class="fas fa-chevron-down"></i>
+        </button>
+        <a href="signup.html" class="join-rewards">JOIN REWARDS</a>
+        <a href="signin.html" class="sign-in-btn">SIGN IN</a>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="nav-container">
+        <button class="hamburger" aria-label="Toggle Navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-left">
+            <a href="index.html" class="nav-item">MENU</a>
+            <a href="index.html#store-locator-section" class="nav-item">LOCATIONS</a>
+            <a href="#" class="nav-item">DELIVERY</a>
+        </div>
+        
+        <div class="logo">
+            <a href="index.html"><img src="/image/dd_nav_logo.svg" alt="Dunkin'"></a>
+        </div>
+        
+        <div class="nav-right">
+            <div class="dunkin-section">
+                <span>DUNKIN'</span>
+                <span>REWARDS</span>
+            </div>
+            <div class="dunkin-section">
+                <span>DUNKIN'</span>
+                <span>CARD</span>
+            </div>
+            <a href="#" class="nav-item">SHOP</a>
+        </div>
+    </nav>
+
+    <!-- Sign-In Section -->
+    <section class="signin-section">
+        <div class="signin-header">
+            <h1>
+                <span class="dunkin">DUNKIN'</span>
+            </h1>
+            <h2>
+                <span class="rewards">SIGN IN</span>
+            </h2>
+            <p class="signin-tagline">ACCESS YOUR DUNKIN' REWARDS</p>
+        </div>
+        <div class="signin-container">
+            <button class="apple-signin-btn">
+                <i class="fab fa-apple"></i> SIGN IN WITH APPLE
+            </button>
+            <div class="divider">
+                <span>OR</span>
+            </div>
+            <form id="signin-form" class="signin-form">
+                <div class="form-group">
+                    <label for="signin-email">Email *</label>
+                    <input type="email" id="signin-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signin-password">Password *</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="signin-password" name="password" required>
+                        <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                <button type="submit" class="signin-btn">SIGN IN</button>
+            </form>
+            <p class="signup-link">Don't have an account? <a href="signup.html">Join Now</a></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Top Footer Area -->
+            <div class="footer-top">
+                <!-- Quick Links Column -->
+                <div class="footer-column quick-links">
+                    <h3 class="footer-heading">QUICK LINKS</h3>
+                    <div class="links-grid">
+                        <a href="#" class="footer-link">Press Room</a>
+                        <a href="#" class="footer-link">Mobile App</a>
+                        <a href="#" class="footer-link">Corporate</a>
+                        <a href="#" class="footer-link">Sustainability</a>
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Franchising</a>
+                        <a href="#" class="footer-link">Contact Us</a>
+                        <a href="#" class="footer-link">Site Map</a>
+                    </div>
+                </div>
+                
+                <!-- Follow Us Column -->
+                <div class="footer-column social-media">
+                    <h3 class="footer-heading">FOLLOW US</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><img src="image/f_twitter_logo.svg" alt="Twitter"></a>
+                        <a href="#" class="social-icon"><img src="image/f_Facebook_new.svg" alt="Facebook"></a>
+                        <a href="#" class="social-icon"><img src="image/f_Pinterest_new.svg" alt="Pinterest"></a>
+                        <a href="#" class="social-icon"><img src="image/f_Instagram_new.svg" alt="Instagram"></a>
+                        <a href="#" class="social-icon"><img src="image/f_YouTube_new.svg" alt="YouTube"></a>
+                        <a href="#" class="social-icon"><img src="image/f_TikTok_new.svg" alt="TikTok"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Partners Section -->
+            <div class="partners-section">
+                <div class="partners-heading-container">
+                    <h3 class="partners-heading">OUR PARTNERS</h3>
+                </div>
+                <div class="partners-logos">
+                    <a href="#" class="partner-logo"><img src="image/f_JetBlue_new.png" alt="JetBlue"></a>
+                    <a href="#" class="partner-logo"><img src="image/f_BR_Logo_New.png" alt="Baskin Robbins"></a>
+                    <a href="#" class="partner-logo"><img src="image/f_new_511_Ravens_Logo.png" alt="Ravens"></a>
+                    <a href="#" class="partner-logo"><img src="image/f_new_511_Orioles_Logo.png" alt="Orioles"></a>
+                    <a href="#" class="partner-logo"><img src="image/f_new_511_Washington_Nationals_Logo.png" alt="Washington Nationals"></a>
+                    <a href="#" class="partner-logo"><img src="image/f_Amex.png" alt="American Express"></a>
+                </div>
+            </div>
+            
+            <!-- Legal Links -->
+            <div class="legal-links">
+                <a href="#" class="legal-link">Terms of Use</a>
+                <a href="#" class="legal-link">Privacy Policy</a>
+                <a href="#" class="legal-link">Cookie Settings</a>
+                <a href="#" class="legal-link">Your Privacy Choices</a>
+                <a href="#" class="legal-link">Consumer Health Data</a>
+                <a href="#" class="legal-link">Do Not Sell My Info</a>
+                <a href="#" class="legal-link">Your Ad Choices</a>
+                <a href="#" class="legal-link">CA Transparency in Supply Chains Act</a>
+                <a href="#" class="legal-link">Web Accessibility</a>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>©2024 DD IP Holder LLC</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
